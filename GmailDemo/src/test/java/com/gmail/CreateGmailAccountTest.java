@@ -16,11 +16,11 @@ public class CreateGmailAccountTest {
 	public void createAccount() {
 		
 		String driverPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver", driverPath+"//chromedriver");
+		System.setProperty("webdriver.chrome.driver", driverPath+"//chromedriver.exe");
 
 		driver = new ChromeDriver();
 		driver.get(URL);
-	//	driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
