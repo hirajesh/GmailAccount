@@ -20,7 +20,7 @@ public class CreateGmailAccountTest {
 
 		driver = new ChromeDriver();
 		driver.get(URL);
-		//driver.manage().window().maximize();
+		driver.manage().window().maximize();
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
